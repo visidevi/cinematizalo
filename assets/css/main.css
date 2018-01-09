@@ -1,3 +1,11 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+
+}
+
 #splash {
     position:absolute;
     top:0;
@@ -9,5 +17,12 @@
     font-family: 'Spicy Rice', cursive;
     color: #b0abaa;
     font-size: 13vh;
+}
 
+a{
+  color: white;
+}
+
+.userHeader{
+    display: none;
 }
