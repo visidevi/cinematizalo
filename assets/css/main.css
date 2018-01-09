@@ -16,7 +16,10 @@ body{
     z-index: 100;
     font-family: 'Spicy Rice', cursive;
     color: #b0abaa;
-    font-size: 13vh;
+    font-size: 20vh;
+}
+.camera{
+  width: 30%;
 }
 
 a{

@@ -1,5 +1,6 @@
+/*función splash*/
 $(function(){
    setTimeout(function() {
-      $('#splash').fadeOut(500);
-   }, 1000);
+      $('#splash').fadeOut(800);
+   }, 2500);
 });
