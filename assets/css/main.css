@@ -3,7 +3,12 @@ html{
 }
 
 body{
+   background-color: #75797c;
+   background-image: url(../images/footer_lodyas.png);
+}
 
+a{
+    color: #00eaa1;
 }
 
 #splash {
@@ -22,10 +27,37 @@ body{
   width: 30%;
 }
 
-a{
-  color: white;
-}
-
 .userHeader{
     display: none;
+}
+
+/*Inicio sin registro*/
+
+.registry{
+    background-color: white;
+    width: 40em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 3em;
+    border-radius: 5px;
+    margin-left: 25em;
+}
+
+.registry h1{
+    text-align: center;
+}
+
+button.loginBtn {
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #00eaa1;
+    color: #FFF;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+button.loginBtn:hover {
+    background: #161616;
+    color: #FFF;
 }
