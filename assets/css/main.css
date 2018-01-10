@@ -61,3 +61,66 @@ button.loginBtn:hover {
     background: #161616;
     color: #FFF;
 }
+/*consu, seccion slide y recommended*/
+.body {
+    background-color: #bbb;
+  }
+
+  .container--head {
+    background: #a090a5;
+  }
+
+  .tooltip-carousel {
+    position: absolute;
+    z-index: 11;
+    border-radius: 50%;
+  }
+
+  .caraousel-tooltip-item {
+    display: none;
+  }
+
+  .caraousel-tooltip-item.active {
+    display: block;
+  }
+.carousel-caption {
+    color: #fff;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 10vh;
+
+
+}
+.carousel-inner>.item>img {
+    line-height: 1;
+    padding: 1vh;
+}
+
+img{
+  display:block;
+  margin:auto;
+
+}
+.titleCarrousel{
+  font-family: 'Spicy Rice', cursive;
+
+}
+.titleCategories{
+  text-align: center;
+  font-family: 'Spicy Rice', cursive;
+}
+/*carrusel hasta aca*/
+#recommended{
+  text-align: center;
+  /*font-family: 'Spicy Rice', cursive;*/
+}
+.opinion{
+  color:white;
+}
+.logo{
+  font-family: 'Spicy Rice', cursive;
+}
+.mobilRecommended{
+  color: white;
+}
+
+/*consu, seccion slide y recommended*/

@@ -1,7 +1,7 @@
 $(function(){
    setTimeout(function() {
-      $('#splash').fadeOut(500);
-   }, 2000);
+      $('#splash').fadeOut(800);
+   }, 2500);
 });
 
 function search(input) {
@@ -41,3 +41,28 @@ $('.nombre0').click(function(){
     console.log('hola');
 
 });
+//funcion carrusel
+$(function() {
+    $('.tooltip-carousel').popover();
+
+    $('#carousel-example-generic').on('slide.bs.carousel', function() {
+      $('.tooltip-carousel').popover('hide');
+      $(this).find('.caraousel-tooltip-item.active').fadeOut(function() {
+        $(this).removeClass('active');
+      });
+    });
+
+    $('#carousel-example-generic').on('slid.bs.carousel', function() {
+      var index = $(this).find('.carousel-inner > .item.active').index();
+      $(this).find('.caraousel-tooltip-item').eq(index).fadeIn(function() {
+        $(this).addClass('active');
+      });
+    });
+
+    $('.tooltip-carousel').mouseenter(function() {
+      $(this).popover('show');
+    }).mouseleave(function() {
+      $(this).popover('hide');
+    });
+  });
+//funcion carrusel fin
