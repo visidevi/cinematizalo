@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>Cinematízalo</title>
+        <title></title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/js/app.js">
         <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
    </head>
    <body>
 <!---Splash------------------------------>
@@ -19,8 +20,6 @@
               <h3>Tu opinión es nuestra Influencia</h3>
           </center>
       </div>
-      <div class="container-fluid">
-
 
 <!---Nav inicio------------------------------->
         <header class="joinHeader">
@@ -35,7 +34,7 @@
                               <span class="icon-bar"></span>
                           </button>
                       </div>
-                      <a class="navbar-brand" href="#">Cinematizalo</a>
+                      <a class="navbar-brand" href="#"><img class="smallLogo"src="assets/images/logo2.png"></a>
                   </div>
                   <div class="container">
                       <div id="navbar" class="navbar-collapse collapse  navbar-right nav-top">
@@ -49,41 +48,56 @@
           </nav>
       </header>
 <!--Fin Nav usuario------->
+
 <!--Sección registro------>
         <div class="registry">
           <div class="row">
               <div class="col-lg-12">
-                  <img class="homeLogo"src="" alt="">
+                  <img class="loginLogo"src="assets/images/logo2.png">
                   <div class="login">
-                      <h1>Entrar</h1>
+                      <h3>Ingresa con</h3>
                       <div class="form-group">
                           <label for="exampleInputEmail1">Nombre de usuario</label>
-                          <input id="name-user-user" type="email" class="form-control" placeholder="Username">
+                          <input id="name-user-user" type="email" class="form-control transparentInput" placeholder="Username">
                       </div>
                       <div class="form-group">
                           <label for="exampleInputEmail1">Correo Electrónico</label>
-                          <input type="email" class="form-control name-user-input" id="email2" placeholder="Email">
+                          <input type="email" class="form-control transparentInput" id="email2" placeholder="Email">
                       </div>
                       <div class="form-group">
                           <label for="exampleInputEmail1">Contraseña</label>
-                          <input type="password" class="form-control" id="password2" placeholder="Password">
+                          <input type="password" class="form-control transparentInput" id="password2" placeholder="Password">
                       </div>
                       <div class="row">
                           <div class="col-lg-12">
                               <div class="col-lg-6">
-                                  <button class="btn btn-default loginBtn btn-block btn-enter-user" type="submit" onclick="ingreso()"><strong>Entrar</strong></button>
+                                  <button class="btn btn-default loginBtn btnStyle btn-block" type="submit" onclick="ingreso()"><strong>Entrar</strong></button>
                               </div>
                               <div class="col-lg-6">
                                   <p><a href="#">¿Olvidaste tu nombre de usuario o tu contraseña?</a></p>
                               </div>
-                              <button class="btn btn-default googleBtn btn-block btn-enter-user" type="submit" onclick="ingreso()"><strong>Ingresar con Google</strong></button>
-                              <button class="btn btn-default googleBtn btn-block btn-enter-user" type="submit" onclick="ingreso()"><strong>Ingresar con Facebook</strong></button>
                           </div>
                       </div>
                  </div>
             </div>
         </div>
         </div>
+
+                          <p class="or">— O con —</p>
+                          <div class="col-lg-12">
+                              <div class="col-lg-6">
+                                  <button class="btn btn-default googleBtn btnStyle btn-block" type="submit" onclick="ingreso()"><span class="icon fa fa-google"></span><strong>Google</strong></button>
+                              </div>
+                              <div class="col-lg-6">
+                                    <button class="btn btn-default facebookBtn btnStyle btn-block" type="submit" onclick="ingreso()"><span class="icon fa fa-facebook"></span><strong>Facebook</strong></button>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+          </div>
+      </div>
+
 <!--Fin Sección registro------>
 <!--Nav usuario------->
         <header class="userHeader">
@@ -98,16 +112,19 @@
                               <span class="icon-bar"></span>
                           </button>
                       </div>
-                      <a class="navbar-brand" href="#">Cinematizalo</a>
+                      <a class="navbar-brand" href="#"><img class="smallLogo"src="assets/images/logo2.png"></a>
+                      <div class="input-group inputSearch">
+                          <input type="text" class="form-control transparentInput searchInput" id="exampleInputAmount" placeholder="Buscar serie o película...">
+                          <div class="input-group-addon searchIcon"><span class="glyphicon glyphicon-search"></span></div>
+                      </div>
                   </div>
                   <div class="container">
                       <div id="navbar" class="navbar-collapse collapse  navbar-right nav-top">
                           <ul class="nav navbar-nav">
-                              <li><a href="#modalJoin" class="btn" data-toggle="modal">Registrate</a></li>
                               <li><a href="#modalLogin" class="btn" data-toggle="modal">Inicia Sesión</a></li>
                               <li class="dropdown">
                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                  <img src="http://placehold.it/23x23" class="profile-image img-circle"> Username <b class="caret"></b></a>
+                                  <img src="assets/images/userimage.png" class="profile-image img-circle"> Username <b class="caret"></b></a>
                                   <ul class="dropdown-menu">
                                       <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
                                       <li class="divider"></li>
@@ -256,7 +273,44 @@
             </div>
           </div>
         </section>
-
+     </header>
+<!--Perfil usuario-->
+<div class="container userProfile">
+    <div class="row user-menu-container square">
+        <div class="col-lg-12 user-details">
+            <div class="row coralbg whiteText">
+                <div class="col-lg-6 no-pad">
+                    <div class="user-image">
+                        <img src="assets/images/userimage.png" class="imageProfile">
+                    </div>
+                </div>
+                <div class="col-lg-6 no-pad">
+                  <div class="user-pad">
+                      <h3 class="whiteText"><strong>Welcome back, Osito</strong></h3>
+                      <h4 class="blackText"><i class="fa fa-check-circle-o"></i> San Antonio, TX</h4>
+                      <h4 class="blackText"><i class="fa fa-twitter"></i> CoolesOCool</h4>
+                      <button type="button" class="btn btn-labeled btn-info btnStyle" href="#">
+                      <span class="btn-label"><i class="fa fa-pencil"></i></span>Update</button>
+                  </div>
+                </div>
+            </div>
+            <div class="row overview">
+                <div class="col-lg-4 user-pad text-center">
+                    <h3>COMPLETA</h3>
+                    <h4>1,784</h4>
+                </div>
+                <div class="col-lg-4 user-pad text-center">
+                    <h3>VIENDO</h3>
+                    <h4>6</h4>
+                </div>
+                <div class="col-lg-4 user-pad text-center">
+                    <h3>RESEÑAS</h3>
+                    <h4>101</h4>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
 
 

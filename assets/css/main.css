@@ -7,8 +7,17 @@ body{
    background-image: url(../images/footer_lodyas.png);
 }
 
+label{
+    color: #00cdab;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
 a{
-    color: #00eaa1;
+    color: #00cdab;
 }
 
 #splash {
@@ -24,48 +33,59 @@ a{
     font-size: 20vh;
 }
 .camera{
-  width: 30%;
+    width: 30%;
 }
 
-.userHeader{
-    display: none;
+/*Nav inicio*/
+.joinHeader{
+    display:none;
+}
+
+.smallLogo{
+    width: 230px;
+    margin-top: -1.8em;
+    margin-left: -5em;
 }
 
 /*Inicio sin registro*/
 
 .registry{
-    background-color: white;
+    display: none;
+}
+
+img.loginLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.login{
+    background-color:transparent;
     width: 40em;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 3em;
     border-radius: 5px;
     margin-left: 25em;
+    border: 1px solid #00cdab;
 }
 
-.registry h1{
-    text-align: center;
-}
-
-button.loginBtn {
+button.btnStyle{
     color: #000;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    background: #00eaa1;
     color: #FFF;
     padding: 0.5em 1em;
     border-radius: 0.5em;
+    border: none;
 }
-button.loginBtn:hover {
+button.btnStyle:hover {
     background: #161616;
     color: #FFF;
 }
-/*consu, seccion slide y recommended*/
-.body {
-    background-color: #bbb;
-  }
 
+/*consu, seccion slide y recommended*/
   .container--head {
     background: #a090a5;
   }
@@ -87,9 +107,8 @@ button.loginBtn:hover {
     color: #fff;
     font-family: 'Spicy Rice', cursive;
     font-size: 10vh;
-
-
 }
+
 .carousel-inner>.item>img {
     line-height: 1;
     padding: 1vh;
@@ -124,3 +143,133 @@ img{
 }
 
 /*consu, seccion slide y recommended*/
+
+
+button.loginBtn{
+   background: #00cdab;
+}
+
+button.googleBtn{
+    background: #e9262a;
+
+}
+
+button.facebookBtn{
+    background: #5360a8;
+}
+
+.or{
+    text-align: center;
+    color: white;
+}
+
+.icon{
+    padding-right: 1em;
+}
+
+input.transparentInput {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid #00cdab;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+}
+
+/*nav usuario*/
+.inputSearch{
+    width: 20em;
+    padding-top: 0.5em;
+    margin-left: 30em;
+}
+
+.searchIcon{
+    background: transparent !important;
+    border: 1px solid #00cdab;
+}
+
+.profile-image{
+  width: 25px;
+}
+
+/*Perfil usuario*/
+
+.userProfile{
+    display: ;
+}
+
+.coralbg {
+    background-color: #FA396F;
+    background-image: url(../images/tree_bark.png);
+}
+
+.coral {
+    color: #FA396f;
+}
+
+.turqbg {
+    background-color: #46D8D2;
+}
+
+.turq {
+    color: #46D8D2;
+}
+
+.whiteText{
+    color: #00cdab!important;
+    text-align: left;
+}
+
+.blackText{
+    color: #75797c;
+    text-align: left;
+}
+
+.user-pad {
+    padding: 20px 25px;
+}
+
+.no-pad {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.user-details {
+    min-height: 333px;
+}
+
+.user-image {
+    max-height:200px;
+    overflow:hidden;
+}
+
+.imageProfile{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 0.5em;
+    width: 173px;
+    margin-left: 5em;
+    border: 5px solid #00cdab;
+}
+
+.overview{
+    background-color: #f3f7f6;
+}
+
+.overview h3 {
+    font-weight: 300;
+    margin-top: 15px;
+    margin: 10px 0 0 0;
+    color: #00cdab;
+}
+
+.overview h4 {
+    font-weight: bold!important;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+button.btn-info{
+   background: #00cdab;
+}
+Perfil usuario
