@@ -16,42 +16,44 @@ h3{
     text-align: center;
 }
 
-a{
+a, h4{
     color: #00cdab;
 }
 
+.greenTitle{
+    color: #00cdab;
+    text-align: center;
+}
+
 #splash {
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     bottom:0;
     width:100%;
-    background-color:#363535;
+    background: radial-gradient(circle,#424141, #444444);
     z-index: 100;
-    font-family: 'Spicy Rice', cursive;
-    color: #b0abaa;
+    color: #1d1d1d;
     font-size: 20vh;
 }
 .camera{
     width: 30%;
+    margin-top: 2em;
 }
 
 /*Nav inicio*/
 .joinHeader{
-    display:none;
+    display:;
 }
 
 .smallLogo{
-    width: 230px;
-    margin-top: -1.8em;
-    margin-left: -5em;
+    /* width: 230px; */
+    /* margin-top: -0.9em;
+    margin-left: -4em; */
+    height: 4em;
 }
 
 /*Inicio sin registro*/
-
-.registry{
-    display: none;
-}
 
 img.loginLogo{
     display: block;
@@ -61,13 +63,24 @@ img.loginLogo{
 
 .login{
     background-color:transparent;
-    width: 40em;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 3em;
-    border-radius: 5px;
-    margin-left: 25em;
     border: 1px solid #00cdab;
+}
+
+.backgroundModal{
+    background-image: url(../images/footer_lodyas.png);
+    border-radius: 5px;
+}
+
+.joinLogo{
+    text-align: center;
+    color: white;
+}
+
+.btnSearch{
+    background: #00cdab;
 }
 
 button.btnStyle{
@@ -77,7 +90,7 @@ button.btnStyle{
     text-decoration: none;
     color: #FFF;
     padding: 0.5em 1em;
-    border-radius: 0.5em;
+    border-radius: 28px;
     border: none;
 }
 button.btnStyle:hover {
@@ -86,27 +99,25 @@ button.btnStyle:hover {
 }
 
 /*consu, seccion slide y recommended*/
-  .container--head {
-    background: #a090a5;
+.container--head {
+  background: rgba(0, 0, 0, .5);
   }
 
-  .tooltip-carousel {
+.tooltip-carousel {
     position: absolute;
     z-index: 11;
     border-radius: 50%;
   }
 
-  .caraousel-tooltip-item {
+.caraousel-tooltip-item {
     display: none;
   }
 
-  .caraousel-tooltip-item.active {
+.caraousel-tooltip-item.active {
     display: block;
   }
 .carousel-caption {
     color: #fff;
-    font-family: 'Spicy Rice', cursive;
-    font-size: 10vh;
 }
 
 .carousel-inner>.item>img {
@@ -114,39 +125,32 @@ button.btnStyle:hover {
     padding: 1vh;
 }
 
-img{
-  display:block;
-  margin:auto;
-
+.sliderHead img{
+    display:block;
+    margin:auto;
 }
-.titleCarrousel{
-  font-family: 'Spicy Rice', cursive;
 
-}
 .titleCategories{
-  text-align: center;
-  font-family: 'Spicy Rice', cursive;
+    color: #00cdab;
+    text-align: center;
 }
 /*carrusel hasta aca*/
 #recommended{
-  text-align: center;
-  /*font-family: 'Spicy Rice', cursive;*/
+    text-align: center;
 }
 .opinion{
-  color:white;
+    color:white;
 }
-.logo{
-  font-family: 'Spicy Rice', cursive;
-}
+
 .mobilRecommended{
-  color: white;
+    color: white;
 }
 
 /*consu, seccion slide y recommended*/
 
 
 button.loginBtn{
-   background: #00cdab;
+    background: #00cdab;
 }
 
 button.googleBtn{
@@ -176,9 +180,9 @@ input.transparentInput {
 
 /*nav usuario*/
 .inputSearch{
-    width: 20em;
-    padding-top: 0.5em;
-    margin-left: 30em;
+    min-width: 20em;
+    margin-top: 0.5em;
+    margin-left: 24em;
 }
 
 .searchIcon{
@@ -187,13 +191,24 @@ input.transparentInput {
 }
 
 .profile-image{
-  width: 25px;
+    width: 25px;
 }
 
-/*Perfil usuario*/
+/*Perfil usuario-------------------------------------------------------*/
+.modal-title{
+    text-align: center;
+    color: #00cdab;
+}
+
+.modal-profile{
+    background-color: #1d1d1d;
+}
 
 .userProfile{
-    display: ;
+
+    width: 100%;
+
+    border-radius: 5px;
 }
 
 .coralbg {
@@ -233,12 +248,7 @@ input.transparentInput {
     padding-bottom: 0;
 }
 
-.user-details {
-    min-height: 333px;
-}
-
 .user-image {
-    max-height:200px;
     overflow:hidden;
 }
 
@@ -246,20 +256,20 @@ input.transparentInput {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    margin-top: 0.5em;
+    margin-top: 2em;
     width: 173px;
     margin-left: 5em;
     border: 5px solid #00cdab;
 }
 
-.overview{
+/* .overview{
     background-color: #f3f7f6;
-}
+} */
 
 .overview h3 {
     font-weight: 300;
-    margin-top: 15px;
-    margin: 10px 0 0 0;
+    /* margin-top: 15px;
+    margin: 10px 0 0 0; */
     color: #00cdab;
 }
 
@@ -267,9 +277,174 @@ input.transparentInput {
     font-weight: bold!important;
     font-size: 40px;
     margin-top: 0;
+    text-align: center;
 }
 
 button.btn-info{
-   background: #00cdab;
+    background: #00cdab;
 }
-Perfil usuario
+
+.btnClose{
+    background: #00cdab;
+}
+
+footer{
+  background: #2d2d2d;
+  color:white;
+  height: 10%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#user-pic{
+    width:2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    background-size: cover;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: 0.5em;
+}
+
+#modal-name, #modal-pic{
+    display: inline-block;
+}
+
+.pic{
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btnOut{
+    margin-left: 3.2em;
+}
+
+.btnNavLogin{
+    margin-top: 0.6em;
+    background: #00cdab;
+}
+
+.dropdown-menu{
+    background-color: #313131;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: left;
+}
+.dropdown-menu > li > a:hover {
+    background-color: #141414;
+    background-image: none;
+    color: white;
+}
+
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.titleCarrousel{
+    margin-top: -0.2em;
+}
+.portfolio-items_one img , #titles img{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    clear:both;
+    margin-bottom: 1em;
+
+}
+
+.plot{
+    text-align: justify-all;
+}
+.portfolio-items_one a , , #titles img{
+
+   cursor: pointer;
+}
+
+.paitingBottom{
+    color: #00cdab;
+}
+a:hover, button:hover{
+    text-decoration:none !important;
+    border-color: white;
+
+}
+#title{
+    overflow: hidden;
+}
+
+.name {
+    color: #00cdab;
+    font-size: 0.9em;
+}
+.message-container{
+    border-bottom: 0.1em solid #00cdab;
+    margin-bottom: 0.9em;
+}
+.img-responsive{
+    max-width: 11em;
+    max-height: 16em ;
+    object-fit: cover !important;
+}
+.img-fluid{
+
+    object-fit: cover !important;
+}
+
+.display{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.display-col{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 10em;
+}
+.display > div{
+    margin: 2em;
+}
+.searchIcon:hover{
+    border-color: #00cdaf;
+}
+#modal-pic{
+    width: 10em;
+    height: 10em;
+    background-size: cover;
+}
+
+h5{
+    color: #00cdaf;
+    word-wrap:break-word;
+    white-space:normal;
+    text-align: center;
+}
+
+.middle{
+    padding-top: 1em;
+}
+h2{
+    text-align: center;
+    color: #00cdaf;
+}
+
+.item img{
+    width: 1200px !important;
+
+
+}
+.onTop{
+    object-position: top;
+}
+.modal-header p{
+    text-align: center;
+}
